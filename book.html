@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>INDEX</title>
+ <link rel="stylesheet" type="text/css" href="book.css">
+</head>
+<body>
+
+
+<form>
+ <h4>PEMESANAN TIKET KONSER</h4>
+  <table>
+  <tr>
+   <td><label>NAMA</label></td>
+   <td>: <input type="text" id="inp_nama" name=""></td>
+  </tr>
+  <tr>
+   <td><label>NO TELEPON</label></td>
+   <td>: <input type="text" id="inp_notel" name=""></td>
+  </tr>
+  <tr>
+   <td><label>TIKET</label></td>
+   <td>
+    : <select onchange="Tujuan()" id="inp_tujuan">
+    <option>--PILIH KONSER--</option><br>
+    <option value="jmbr">KONSER 1</option>
+    <option value="sby">KONSER 2</option>
+    </select>
+   </td>
+  </tr>
+  <tr>
+   <td><label>KELAS TIKET</label></td>
+   <td>
+    : <select onchange="harganya()" id="kelas2">
+    <option>--PILIH KELAS TIKET--</option>
+    </select>
+   </td>
+  </tr>
+  <tr>
+   <td><label>HARGA TIKET</label></td>
+   <td>: <input type="text" id="tampil" disabled="true" name=""></td>
+  <tr>
+   <td><label>JUMLAH</label></td>
+   <td>: <input onkeyup="Total()" type="number" id="inp_jumlah" name=""></td>
+  </tr>
+  <tr>
+   <td><label>TOTAL</label></td>
+   <td>: <input type="text" id="total2" disabled="true" name=""></td>
+  </tr>
+  </table>
+  <center><input type="button" value="PESAN" onclick="pesan()" name=""></center>
+  
+</form>
+
+<h4>Kembali ke <a href="home.html"><b>Konser</b></a></h4>
+
+<script type="text/javascript" src="book.js"></script>
+</body>
+</html>
